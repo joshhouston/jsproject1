@@ -1,17 +1,22 @@
 body {
   background: rgb(0,25,232);
 background: linear-gradient(90deg, rgba(0,25,232,1) 0%, rgba(23,59,241,1) 0%, rgba(162,2,35,1) 100%);
-overflow: scroll;
+/* overflow: scroll;
 overflow-x: hidden;
-overflow-y: hidden;
+overflow-y: hidden; */
 }
 
-.welcome p {
+.welcome h1 {
   color: #FFF;
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
   font-size: 10em;
   font-style: italic;
+}
+.welcome p {
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
 }
 
 @keyframes slideinFromLeft {
