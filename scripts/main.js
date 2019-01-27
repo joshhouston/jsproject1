@@ -1,9 +1,8 @@
+// ********* Getting the date and putting it in the DOM *************
 document.getElementById('theDate');
 
-
-
 var today = new Date();
-var dd = today.getDate();
+var dd =  31//today.getDate();
 var mm = today.getMonth() + 1; //January is 0!
 var yyyy = today.getFullYear();
 
@@ -16,5 +15,12 @@ if (mm < 10) {
 }
 
 today = mm + '/' + dd + '/' + yyyy;
-theDate = today;
-document.write(today);
+theDate.innerHTML = today;
+
+// *********** Subtracting the start date from current date ****************** //
+document.getElementById('dayCounter');
+dayCounter.innerHTML = dd - 20;
+
+if (today) {
+  console.log(mm + 2);
+}
