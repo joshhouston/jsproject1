@@ -1,9 +1,15 @@
-body {
-  background: rgb(0,25,232);
-background: linear-gradient(90deg, rgba(0,25,232,1) 0%, rgba(23,59,241,1) 0%, rgba(162,2,35,1) 100%);
+body,html {
+  height: 100%;
+  background: rgb(6,4,51);
+  background: linear-gradient(to bottom, rgba(6,4,51,1) 40%, rgba(3,0,1,1) 100%);
 /* overflow: scroll;
-overflow-x: hidden;
-overflow-y: hidden; */
+overflow-x: hidden; */
+overflow-y: hidden;
+margin: 0;
+}
+
+.welcome {
+
 }
 
 .welcome h1 {
@@ -19,6 +25,8 @@ overflow-y: hidden; */
   font-size: 2em;
 }
 
+
+
 /* @keyframes slideinFromLeft {
   0% {
     transform: translateX(100%);
@@ -32,3 +40,97 @@ overflow-y: hidden; */
   animation: 1s ease-out 0s 1 slideinFromLeft;
 
 } */
+/* ***************** NEW STYLE *****************/
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 3em 2em 0 2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.topIcon {
+  display: flex;
+
+}
+
+.fa-bell {
+  margin-right: 5em;
+}
+
+.material-icons {
+  color: #FFF;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.profPic {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.profPic img {
+  height: 65px;
+  width: 65px;
+  border-radius: 15px;
+
+}
+
+.profPic p {
+  color: #FFF;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 1em;
+}
+
+.sideWeek {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2em;
+}
+.sideWeek a{
+  padding-top: 0.5em;
+}
+
+/* ******  Outlined Material Icons ******* */
+.material-icons-new {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-white {
+    webkit-filter: contrast(4) invert(1);
+    -moz-filter: contrast(4) invert(1);
+    -o-filter: contrast(4) invert(1);
+    -ms-filter: contrast(4) invert(1);
+    filter: contrast(4) invert(1);
+}
+
+/* ******************************************** */
+
+.active {
+  background: -webkit-linear-gradient(#F545FF, #700CCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sideWeek a {
+  padding-left: 1em;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.sideWeek a:hover {
+  background: -webkit-linear-gradient(#F545FF, #700CCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+}
