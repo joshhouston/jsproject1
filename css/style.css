@@ -128,7 +128,7 @@ margin: 0;
   .myTasks {
     width: 650px;
     margin-top: 3em;
-    background-color: #030618;
+    background-color: #0A0E21;
     border-radius: 10px;
     box-shadow: 0 0 0.2em;
   }
@@ -284,6 +284,11 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   padding: 3em 1.5em 1.5em 3em;
+  justify-content: space-between;
+}
+
+#meTime {
+  font-size: 0.3em;
 }
 
 .investedTime {
@@ -301,6 +306,22 @@ input:checked + .slider:before {
   font-weight: bold;
   margin: 0.2em 0 0.2em 0.3em;
 }
+
+.investedTime2 {
+  width: 350px;
+  background-color: #181732;
+  border-radius: 4px;
+}
+.investedTime2 p {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  color: #FFF;
+  font-weight: bold;
+  margin: 0.2em 0 0.2em 0.3em;
+}
+
+
 
 .timeHead {
   display: flex;
